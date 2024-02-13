@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity22"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@color/color4"
+        android:backgroundTint="@color/color4"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back13"
+            android:clickable="true"
+            android:layout_marginTop="80px"
+            android:layout_width="150px"
+            android:layout_marginLeft="20px"
+            android:layout_height="80px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/arrow_foreground"
+            android:backgroundTint="@color/color4"
+
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="-85px"
+            android:layout_marginLeft="380px"></TextView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:background="@drawable/myshapes"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="-220px"
+        android:layout_marginLeft="350px"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <EditText
+        android:layout_width="950px"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        android:text="   Ali"
+        android:textColor="@color/grey">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <EditText
+        android:layout_width="950px"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        android:text="   ali@gmail.com"
+        android:textColor="@color/grey">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <EditText
+        android:layout_width="950px"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        android:text="   +92 321 2242022"
+        android:textColor="@color/grey">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="950px"
+        android:layout_height="35dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="950px"
+        android:layout_height="35dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="60px"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="940px"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="300px"
+        android:backgroundTint="@color/color5"
+        android:background="@drawable/inputfeild"
+        android:paddingTop="50px"
+        android:textSize="20dp"
+        android:text="Update Profile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity23"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1900px"
+        android:background="@color/color9"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50:08"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="470px"
+            android:layout_marginTop="150px"></TextView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300px"
+        android:layout_height="10px"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/inputfeild"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="10px"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hue"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/round2"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="130px"></View>
+
+        <ImageButton
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:backgroundTint="@color/color5"
+            android:src="@mipmap/micoff"
+            android:layout_marginTop="76px"
+            android:layout_marginLeft="-135px"></ImageButton>
+
+        <View
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/round2"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="180px"></View>
+
+        <ImageButton
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:backgroundTint="@color/color5"
+            android:src="@mipmap/volumeup"
+            android:layout_marginTop="76px"
+            android:layout_marginLeft="-135px"></ImageButton>
+
+        <View
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/round2"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="180px"></View>
+
+        <ImageButton
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:backgroundTint="@color/color5"
+            android:src="@mipmap/pause"
+            android:layout_marginTop="76px"
+            android:layout_marginLeft="-135px"></ImageButton>
+
+        <View
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/round2"
+            android:backgroundTint="#870303"
+            android:layout_marginTop="130px"
+            android:layout_marginLeft="-450px"></View>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:backgroundTint="@color/color5"
+            android:src="@mipmap/close"
+            android:layout_marginTop="196px"
+            android:layout_marginLeft="-135px"></ImageButton>
+
+    </LinearLayout>
+
+
+</LinearLayout>

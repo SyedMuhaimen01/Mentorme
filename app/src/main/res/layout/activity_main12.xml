@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity12"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@color/color4"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back7"
+            android:clickable="true"
+            android:layout_marginTop="40px"
+            android:layout_width="130px"
+            android:layout_marginLeft="20px"
+            android:background="@color/color4"
+            android:layout_height="80px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/arrow_foreground"
+            android:backgroundTint="@color/color4"
+
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, I'm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jhon Cooper"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <ImageButton
+            android:src="@mipmap/pfp"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginTop="-320px"
+            android:layout_marginLeft="700px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color3"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color4"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop me a review"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@mipmap/addreaction"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="10px">
+
+        </ImageView>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="940px"
+        android:layout_height="500px"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="130px"
+        android:textSize="15dp"
+        android:background="@drawable/searchbar"
+        android:shadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:shadowDy="10"
+        android:text="Type your experience..."
+        android:textColor="@color/grey"
+        android:textAlignment="viewStart"
+        android:paddingBottom="300px"
+        android:paddingLeft="30px"
+        android:shadowDx="10"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+
+        android:layout_marginTop="80px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:src="@mipmap/star5"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="140px">
+
+        </ImageButton>
+        <ImageButton
+            android:src="@mipmap/star5"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px">
+
+        </ImageButton>
+        <ImageButton
+            android:src="@mipmap/star5"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px">
+
+        </ImageButton>
+        <ImageButton
+            android:src="@mipmap/star5"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px">
+
+        </ImageButton>
+        <ImageButton
+            android:src="@mipmap/star5"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="940px"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="400px"
+        android:backgroundTint="@color/color5"
+        android:background="@drawable/inputfeild"
+        android:paddingTop="50px"
+        android:textSize="20dp"
+        android:text="Submit Feedback"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+</LinearLayout>

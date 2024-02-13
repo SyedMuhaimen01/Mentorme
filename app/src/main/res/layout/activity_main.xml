@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color2"
+        android:text="mentor"
+        android:textSize="60sp"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:layout_marginLeft="160px"
+        android:layout_marginTop="-20px"
+        android:textStyle="bold|italic">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FEBA4F"
+        android:text="me"
+        android:textSize="60sp"
+        android:layout_marginTop="-20px"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0px"
+        android:textStyle="bold|italic">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color2"
+        android:text="connect. ask. learn."
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="-670px">
+    </TextView>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-1000px"
+        android:alpha="0.6"
+        ></View>
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-200px"
+        android:layout_marginTop="-150px"
+        android:alpha="0.5"
+        ></View>
+
+</LinearLayout>

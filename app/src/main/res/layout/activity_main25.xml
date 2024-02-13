@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity25"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="-200px"
+        android:background="@drawable/myshapes"
+        android:alpha="0.6"
+        ></View>
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-50px"
+        android:layout_marginTop="-500px"
+        android:alpha="0.5"
+        ></View>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:clickable="true"
+        android:layout_marginTop="-40px"
+        android:layout_width="130px"
+        android:layout_marginLeft="20px"
+        android:layout_height="80px"
+        android:src="@mipmap/arrow2_round"
+        android:backgroundTint="@color/color4"
+
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="160px"
+        android:textStyle="bold"
+        android:text="Notifications"
+        android:layout_marginTop="-80px"
+        >
+    </TextView>
+
+<ImageButton
+    android:id="@+id/notifications"
+    android:layout_width="100px"
+    android:layout_height="100px"
+    android:src="@mipmap/notification2"
+    android:layout_marginTop="-100px"
+    android:layout_marginLeft="650px"></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:textStyle="bold"
+        android:textColor="@color/yellowishgolden"
+        android:textSize="18dp"
+        android:layout_marginLeft="820px"
+        android:layout_marginTop="80px"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="You have added a mentor, Alex. Thank you! "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="100px"></TextView>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Your favorites list is expanding. Impressive"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"></TextView>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="You have a new message in community. 👀 "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"></TextView>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Your favorite mentor is online. Say Hi to him."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"></TextView>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Thank you for booking a session. Good luck."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"></TextView>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
+
+
+
+</LinearLayout>

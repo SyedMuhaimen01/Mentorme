@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity24"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="-200px"
+        android:background="@drawable/myshapes"
+        android:alpha="0.6"
+        ></View>
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-50px"
+        android:layout_marginTop="-500px"
+        android:alpha="0.5"
+        ></View>
+
+    <ImageButton
+        android:id="@+id/back14"
+        android:clickable="true"
+        android:layout_marginTop="-40px"
+        android:layout_width="130px"
+        android:layout_marginLeft="20px"
+        android:layout_height="80px"
+        android:src="@mipmap/arrow2_round"
+        android:backgroundTint="@color/color3"
+
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="160px"
+        android:textStyle="bold"
+        android:text="Booked Sessions"
+        android:layout_marginTop="-80px"
+        >
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="584dp"
+        android:layout_marginTop="40px"
+        android:background="@color/hue"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="380px"
+            android:layout_height="380px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/inputfeild"
+            android:backgroundTint="@color/color9"></ImageView>
+
+        <LinearLayout
+            android:layout_width="570px"
+            android:layout_height="130px"
+            android:layout_marginLeft="450px"
+            android:layout_marginTop="-140px"
+            android:background="@drawable/inputfeild"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="John Cooper"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:layout_marginTop="10px"
+                android:text="24th Dec 2023"
+                android:textColor="@color/yellowishgolden"
+                android:textSize="12dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-530px"
+                android:layout_marginTop="40px"
+                android:text="Lead- Technology officer"
+                android:textColor="@color/black"
+                android:textSize="7dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140px"
+                android:layout_marginTop="50px"
+                android:text="1:00 pm"
+                android:textColor="@color/yellowishgolden"
+                android:textSize="12dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="380px"
+            android:layout_height="380px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/inputfeild"
+            android:backgroundTint="@color/color9"></ImageView>
+
+        <LinearLayout
+            android:layout_width="570px"
+            android:layout_height="130px"
+            android:layout_marginLeft="450px"
+            android:layout_marginTop="-140px"
+            android:background="@drawable/inputfeild"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="Emma Philips"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:layout_marginTop="10px"
+                android:text="1st Jan 2024"
+                android:textColor="@color/yellowishgolden"
+                android:textSize="12dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-530px"
+                android:layout_marginTop="40px"
+                android:text="Android Developer"
+                android:textColor="@color/black"
+                android:textSize="7dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190px"
+                android:layout_marginTop="50px"
+                android:text="09:00 pm"
+                android:textColor="@color/yellowishgolden"
+                android:textSize="12dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

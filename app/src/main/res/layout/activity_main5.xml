@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity5"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back1"
+        android:clickable="true"
+        android:layout_marginTop="100px"
+        android:layout_width="150px"
+        android:layout_marginLeft="20px"
+        android:layout_height="80px"
+        android:src="@mipmap/arrow_round"
+        android:backgroundTint="@color/hue"
+        android:scaleType="centerCrop"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="60px"
+        android:textStyle="bold"
+        android:text="Verify your Phone Number"
+        android:layout_marginTop="50px"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80px"
+        android:text="we've sent a code to "
+        android:layout_marginTop="20px"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="570px"
+        android:text="+92 321 2242022"
+        android:layout_marginTop="-71px"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_marginTop="30px"
+        android:background="@color/hue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circles"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circles"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circles"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circles"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="20px"
+            ></TextView>
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circles"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/verify"
+        android:layout_width="450px"
+        android:layout_height="40dp"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/inputfeild"
+        android:textAlignment="center"
+        android:paddingTop="25px"
+        android:backgroundTint="@color/color5"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send code again"
+        android:textColor="@color/black"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="10px"
+        android:textSize="15dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:20"
+        android:textStyle="bold"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="640px"
+        android:layout_marginTop="-58px"
+        android:textSize="15dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:background="@color/color6"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:background="@color/color6"
+            android:layout_marginTop="30px">
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="2"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:background="@color/color6"
+            android:layout_marginTop="50px">
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="4"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="5"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="6"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:background="@color/color6"
+            android:layout_marginTop="50px">
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="7"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="8"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="9"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:background="@color/color6"
+            android:layout_marginTop="50px">
+
+
+            <Button
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="400px"
+                android:backgroundTint="@color/color7">
+
+            </Button>
+
+            <ImageButton
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:src="@mipmap/backspace"
+                android:clickable="true"
+                android:layout_marginLeft="100px"
+                android:backgroundTint="@color/color6">
+
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

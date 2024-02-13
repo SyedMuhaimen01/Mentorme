@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity14"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@color/color4"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back9"
+            android:clickable="true"
+            android:layout_marginTop="80px"
+            android:layout_width="130px"
+            android:layout_marginLeft="20px"
+            android:background="@color/color4"
+            android:layout_height="80px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/arrow_foreground"
+            android:backgroundTint="@color/color4"
+
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Your Session"
+            android:textColor="@color/color5"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="-75px"
+            android:layout_marginLeft="140px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Cooper"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="70px"
+            ></TextView>
+
+        <ImageButton
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/star"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="60px"></ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="27dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="140px"
+            android:layout_marginTop="-95px"
+            ></TextView>
+
+        <ImageButton
+            android:src="@mipmap/pfp_round"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginTop="-390px"
+            android:layout_marginLeft="700px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color3"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color4"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="$1500/Session"
+            android:textColor="@color/yellowishgolden"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            ></TextView>
+
+        <View
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/round"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="160px">
+
+        </View>
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/chat2_round"
+            android:layout_marginTop="78px"
+            android:layout_marginLeft="-78px">
+
+        </ImageView>
+
+        <View
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/round"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="40px">
+
+        </View>
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/dial_round"
+            android:layout_marginTop="78px"
+            android:layout_marginLeft="-78px">
+
+        </ImageView>
+
+        <View
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/round"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="40px">
+
+        </View>
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/cam"
+            android:layout_marginTop="78px"
+            android:layout_marginLeft="-78px">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+   <CalendarView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/hue"
+       android:weekNumberColor="@color/black"
+       android:unfocusedMonthDateColor="@color/black"></CalendarView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Available Time Slots"
+        android:textColor="@color/black"
+        android:layout_marginLeft="60px"
+        ></TextView>
+
+    <TextView
+        android:layout_width="250px"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="30px"
+        android:textColor="@color/black"
+        android:text="10:00 AM"
+        android:paddingTop="15px"
+        android:textAlignment="center"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color9"></TextView>
+
+    <TextView
+        android:layout_width="250px"
+        android:layout_height="30dp"
+        android:layout_marginLeft="380px"
+        android:textColor="@color/white"
+        android:text="11:00 AM"
+        android:paddingTop="15px"
+        android:textAlignment="center"
+        android:layout_marginTop="-90px"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color5"></TextView>
+
+    <TextView
+        android:layout_width="250px"
+        android:layout_height="30dp"
+        android:layout_marginLeft="690px"
+        android:textColor="@color/black"
+        android:text="12:00 PM"
+        android:paddingTop="15px"
+        android:textAlignment="center"
+        android:layout_marginTop="-90px"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color9"></TextView>
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="940px"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="100px"
+        android:backgroundTint="@color/color5"
+        android:textSize="20dp"
+        android:paddingTop="50px"
+        android:background="@drawable/inputfeild"
+        android:text="Book An Appointment"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+</LinearLayout>

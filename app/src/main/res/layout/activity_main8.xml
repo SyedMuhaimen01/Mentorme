@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity8"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="-200px"
+        android:background="@drawable/myshapes"
+        android:alpha="0.6"
+        ></View>
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-50px"
+        android:layout_marginTop="-500px"
+        android:alpha="0.5"
+        ></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="10px"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ali"
+        android:textStyle="bold"
+        android:textColor="@color/color5"
+        android:textSize="30dp"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="-115px"></TextView>
+
+    <View
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/round2"
+        android:layout_marginTop="-170px"
+        android:layout_marginLeft="870px"></View>
+
+    <ImageButton
+        android:id="@+id/notifications"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:background="@drawable/circles"
+        android:src="@mipmap/notification_round"
+        android:layout_marginLeft="935px"
+        android:layout_marginTop="-135px"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color5"
+        android:textSize="14dp"
+        android:text="Ready for mentorship? Let's begin the journey!"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="50px"></TextView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hue"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+
+            <Button
+                android:layout_width="190px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20px"
+                android:backgroundTint="@color/color5"
+                android:text="All"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_width="320px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:backgroundTint="@color/color8"
+                android:text="Education"
+                android:textColor="@color/color5"
+                android:textSize="12dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_width="440px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:backgroundTint="@color/color8"
+                android:text="Entrepreneurship"
+                android:textColor="@color/color5"
+                android:textSize="12dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:backgroundTint="@color/color8"
+                android:text="Personal Growth"
+                android:textColor="@color/color5"
+                android:textSize="10dp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1600px"
+        android:layout_marginTop="50px"
+        android:background="@color/hue"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:text="Top Mentors for you"
+                android:textColor="@color/color5"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="520px"
+                android:layout_marginTop="30px"
+                android:text="View All"
+                android:textColor="@color/color5"
+                android:textSize="11dp"></TextView>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="420px"
+                android:layout_marginTop="100px"
+                android:layout_marginLeft="-1050px">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420px"
+                    android:layout_marginLeft="-350px"
+                    android:layout_marginTop="-00px"
+                    android:background="@color/hue"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="370px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:id="@+id/profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="John Cooper"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25px"
+                            android:layout_marginTop="10px"
+                            android:text="$1500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-350px"
+                            android:layout_marginTop="35px"
+                            android:text="UX Designer @Google"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-180px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:backgroundTint="@color/lightgreen"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Available"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart3"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Martina Watson"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="10px"
+                            android:text="$500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-350px"
+                            android:layout_marginTop="35px"
+                            android:text="Lead- Technology officer"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-200px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:backgroundTint="@color/grey"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Emma"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="10px"
+                            android:text="$1500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-330px"
+                            android:layout_marginTop="35px"
+                            android:text="Lead- Corporate"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-130px"
+                            android:layout_marginTop="90px"
+                            android:backgroundTint="@color/grey"
+                            android:background="@drawable/dot2"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1060px"
+                android:layout_marginTop="540px"
+                android:text="Education Mentors"
+                android:textColor="@color/color5"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="530px"
+                android:layout_marginTop="540px"
+                android:text="View All"
+                android:textColor="@color/color5"
+                android:textSize="11dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="1600px"
+                android:layout_height="420px"
+                android:layout_marginTop="600px"
+                android:layout_marginLeft="-1100px">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420px"
+                    android:layout_marginLeft="-380px"
+                    android:layout_marginTop="00px"
+                    android:orientation="horizontal"
+                    android:background="@color/hue">
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="370px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Michael Drake"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5px"
+                            android:layout_marginTop="10px"
+                            android:text="$900/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-350px"
+                            android:layout_marginTop="35px"
+                            android:text="NLP Expert"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-90px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Available"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart3"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Alex"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="170px"
+                            android:layout_marginTop="10px"
+                            android:text="$200/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-340px"
+                            android:layout_marginTop="35px"
+                            android:text="Android Developer"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-150px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:backgroundTint="@color/grey"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Emma"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="10px"
+                            android:text="$1500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-330px"
+                            android:layout_marginTop="35px"
+                            android:text="Lead- Corporate"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-130px"
+                            android:layout_marginTop="90px"
+                            android:backgroundTint="@color/grey"
+                            android:background="@drawable/dot2"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1590px"
+                android:layout_marginTop="1060px"
+                android:text="Recent Mentors"
+                android:textColor="@color/color5"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="390px"
+                android:layout_marginTop="1060px"
+                android:text="View All"
+                android:textColor="@color/color5"
+                android:textSize="11dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="1600px"
+                android:layout_height="420px"
+                android:layout_marginTop="1130px"
+                android:layout_marginLeft="-1100px">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420px"
+                    android:layout_marginLeft="-350px"
+                    android:layout_marginTop="-00px"
+                    android:background="@color/hue"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="370px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="John Cooper"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25px"
+                            android:layout_marginTop="10px"
+                            android:text="$1500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-350px"
+                            android:layout_marginTop="35px"
+                            android:text="UX Designer @Google"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-180px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Available"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart3"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Martina Watson"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="10px"
+                            android:text="$500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-350px"
+                            android:layout_marginTop="35px"
+                            android:text="Lead- Technology officer"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-200px"
+                            android:layout_marginTop="90px"
+                            android:background="@drawable/dot2"
+                            android:backgroundTint="@color/grey"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/color9"></View>
+
+                    <LinearLayout
+                        android:layout_width="370px"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="-385px"
+                        android:layout_marginTop="270px"
+                        android:background="@drawable/inputfeild"
+                        android:backgroundTint="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:text="Emma"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120px"
+                            android:layout_marginTop="10px"
+                            android:text="$1500/Session"
+                            android:textColor="@color/yellowishgolden"
+                            android:textSize="5dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-330px"
+                            android:layout_marginTop="35px"
+                            android:text="Lead- Corporate"
+                            android:textColor="@color/black"
+                            android:textSize="6dp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:layout_width="30px"
+                            android:layout_height="30px"
+                            android:layout_marginLeft="-130px"
+                            android:layout_marginTop="90px"
+                            android:backgroundTint="@color/grey"
+                            android:background="@drawable/dot2"
+                            android:scaleType="fitCenter"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="75px"
+                            android:text="Not Available"
+                            android:textColor="@color/grey"
+                            android:textSize="10dp"></TextView>
+
+                        <View
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginLeft="60px"
+                            android:layout_marginTop="70px"
+                            android:background="@mipmap/heart2"></View>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/circles"
+        android:layout_marginTop="-280px"
+        android:layout_marginLeft="450px"
+        android:backgroundTint="@color/color10"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/color10"
+        android:layout_marginTop="-130px">
+
+        <ImageButton
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/home"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/search3"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/chat"
+            android:layout_marginLeft="220px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/myprofile"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/person"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/hue"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="-1000px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="95px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="300px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="120px"></TextView>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/add1"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_marginLeft="495px"
+        android:layout_marginTop="-250px"
+        android:src="@mipmap/plus"
+        android:backgroundTint="@color/color10"
+        android:background="@drawable/circles"
+        ></ImageButton>
+
+
+
+
+</LinearLayout>

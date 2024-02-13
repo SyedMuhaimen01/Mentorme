@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity9"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="-200px"
+        android:background="@drawable/myshapes"
+        android:alpha="0.6"
+        ></View>
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/myshapes"
+        android:layout_marginLeft="-50px"
+        android:layout_marginTop="-500px"
+        android:alpha="0.5"
+        ></View>
+
+    <ImageButton
+        android:id="@+id/back4"
+        android:clickable="true"
+        android:layout_marginTop="-100px"
+        android:layout_width="130px"
+        android:layout_marginLeft="20px"
+        android:layout_height="80px"
+        android:src="@mipmap/arrow2_round"
+        android:backgroundTint="@color/color3"
+
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="60px"
+        android:textStyle="bold"
+        android:text="Let's Find..."
+        android:layout_marginTop="50px"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50px"
+        android:background="@drawable/searchbar">
+<EditText
+    android:layout_width="880px"
+    android:layout_height="35dp"
+    android:layout_marginTop="20px"
+    android:textSize="15dp"
+    android:text="  Search"
+    android:paddingBottom="10px"
+    android:textColor="@color/grey"
+    android:layout_marginLeft="100px"
+    android:background="@color/white"></EditText>
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/search2"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="-970px"></ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Searches"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentor 1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"></TextView>
+
+    <ImageButton
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-50px"
+        android:layout_marginLeft="920px"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentor 2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"></TextView>
+
+    <ImageButton
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-50px"
+        android:layout_marginLeft="920px"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentor 3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"></TextView>
+
+    <ImageButton
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-50px"
+        android:layout_marginLeft="920px"
+        ></ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:layout_marginTop="100px"
+        android:background="@color/color3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse Categories"
+            android:textColor="@color/color5"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="50px"></TextView>
+
+
+
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:src="@mipmap/entrepeneurship"
+
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="50px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color11"></ImageButton>
+
+        <TextView
+            android:id="@+id/cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrepreneurship"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="-150px"
+            android:layout_marginLeft="270px"></TextView>
+
+        <ImageButton
+
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/northeast"
+            android:layout_marginLeft="900px"
+            android:layout_marginTop="-60px"></ImageButton>
+
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_marginTop="80px"
+            android:src="@mipmap/personalgrowth"
+            android:layout_marginLeft="50px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color11"></ImageButton>
+
+        <TextView
+            android:id="@+id/cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Growth"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="-150px"
+            android:layout_marginLeft="270px"></TextView>
+
+        <ImageButton
+
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/northeast"
+            android:layout_marginLeft="900px"
+            android:layout_marginTop="-60px"></ImageButton>
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_marginTop="80px"
+            android:src="@mipmap/education"
+            android:layout_marginLeft="50px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color11"></ImageButton>
+
+        <TextView
+            android:id="@+id/cat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="-150px"
+            android:layout_marginLeft="270px"></TextView>
+
+        <ImageButton
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/northeast"
+            android:layout_marginLeft="900px"
+            android:layout_marginTop="-60px"></ImageButton>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/circles"
+        android:layout_marginTop="-280px"
+        android:layout_marginLeft="450px"
+        android:backgroundTint="@color/color10"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/color10"
+        android:layout_marginTop="-130px">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/home2"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/search"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/chat"
+            android:layout_marginLeft="220px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/myprofile"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/person"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="-1000px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/hue"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="95px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="300px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="120px"></TextView>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/add2"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_marginLeft="495px"
+        android:layout_marginTop="-250px"
+        android:src="@mipmap/plus"
+        android:backgroundTint="@color/color10"
+        android:background="@drawable/circles"
+        ></ImageButton>
+
+</LinearLayout>

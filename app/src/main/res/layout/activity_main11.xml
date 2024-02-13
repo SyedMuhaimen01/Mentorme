@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity11"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+    android:background="@color/color4"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back6"
+        android:clickable="true"
+        android:layout_marginTop="40px"
+        android:layout_width="130px"
+        android:layout_marginLeft="20px"
+        android:background="@color/color4"
+        android:layout_height="80px"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/arrow_foreground"
+        android:backgroundTint="@color/color4"
+
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, I'm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"
+    ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jhon Cooper"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"
+        ></TextView>
+
+    <ImageButton
+
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginTop="-320px"
+        android:layout_marginLeft="700px"
+        android:src="@mipmap/pfp_round"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circles"
+        android:backgroundTint="@color/color3"></ImageButton>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:background="@color/color4"
+        android:layout_marginTop="5px"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UX Designer at"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="20px"
+            ></TextView>
+
+        <ImageButton
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/star"
+            android:layout_marginTop="-200px"
+            android:layout_marginLeft="830px"></ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="910px"
+            android:layout_marginTop="-90px"
+            ></TextView>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="400px"
+    android:layout_marginTop="5px"
+    android:background="@drawable/inputfeild"
+    android:backgroundTint="@color/color4"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About me"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="10px"
+        ></TextView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:text="I am a passionate UX designer at Google with a focus on \ncreating user-centric and inituitive interfaces. With 10 years of \nexperience, I have had the opportunity to work on diverse\nprojects that have shaped my understanding of design\nprinciples and user-experience."></TextView>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Expertise Include"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"></TextView>
+
+        <TextView
+            android:layout_width="340px"
+            android:paddingTop="15px"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:backgroundTint="@color/color4"
+            android:background="@drawable/inputfeild"
+            android:text="Career Advice"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="100px"></TextView>
+
+    <TextView
+        android:layout_width="540px"
+        android:paddingTop="15px"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/color4"
+        android:background="@drawable/inputfeild"
+        android:text="User Experience Design"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="-90px"
+        android:layout_marginLeft="500px"></TextView>
+
+    <TextView
+        android:layout_width="340px"
+        android:paddingTop="15px"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/color4"
+        android:background="@drawable/inputfeild"
+        android:text="Leadership"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="70px"
+        android:layout_marginLeft="100px"></TextView>
+
+    <TextView
+        android:layout_width="340px"
+        android:paddingTop="15px"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/color4"
+        android:background="@drawable/inputfeild"
+        android:text="Prototyping"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="-90px"
+        android:layout_marginLeft="470px"></TextView>
+    
+    <Button
+        android:id="@+id/review"
+        android:layout_width="440px"
+        android:layout_height="40dp"
+        android:textAlignment="textStart"
+        android:text="Drop a review"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:backgroundTint="@color/yellowishgolden"
+        ></Button>
+
+    <Button
+        android:id="@+id/community"
+        android:layout_width="480px"
+        android:layout_height="40dp"
+        android:textAlignment="textStart"
+        android:text="Join Community"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="570px"
+        android:layout_marginTop="-120px"
+        android:backgroundTint="@color/yellowishgolden"
+        ></Button>
+
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/ratereview"
+        android:layout_marginTop="-95px"
+        android:layout_marginLeft="446px"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/people"
+        android:layout_marginTop="-78px"
+        android:layout_marginLeft="955px"
+        ></ImageView>
+    
+    <TextView
+        android:id="@+id/bookSession"
+        android:layout_width="940px"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="80px"
+        android:backgroundTint="@color/color5"
+        android:background="@drawable/inputfeild"
+        android:paddingTop="50px"
+        android:textSize="20dp"
+        android:text="Book a Session"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+</LinearLayout>

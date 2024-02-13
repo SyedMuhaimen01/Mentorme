@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity7"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back3"
+        android:clickable="true"
+        android:layout_marginTop="100px"
+        android:layout_width="150px"
+        android:layout_marginLeft="20px"
+        android:layout_height="80px"
+        android:src="@mipmap/arrow_round"
+        android:backgroundTint="@color/hue"
+        android:scaleType="centerCrop"
+        android:outlineAmbientShadowColor="@color/color5"
+        android:outlineSpotShadowColor="@color/color5"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="60px"
+        android:textStyle="bold"
+        android:text="Reset Password?"
+        android:layout_marginTop="50px"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80px"
+        android:text="Please type a new password and re-enter the password. Type something you will remember! "
+        android:layout_marginTop="20px"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="55px"
+        android:layout_marginLeft="60px"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:layout_width="950px"
+        android:layout_height="40dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:text="   Enter New Password"
+        android:textColor="@color/grey">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="55px"
+        android:layout_marginLeft="60px"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:layout_width="950px"
+        android:layout_height="40dp"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10px"
+        android:textSize="15dp"
+        android:layout_marginLeft="60px"
+        android:text="   Re-enter Password"
+        android:textColor="@color/grey">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/resetPwd"
+        android:layout_width="700px"
+        android:layout_height="50dp"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="200px"
+        android:backgroundTint="@color/color5"
+        android:text="Reset Password"
+        android:textAlignment="center"
+        android:paddingTop="30px"
+        android:background="@drawable/inputfeild"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+
+        android:clickable="true"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't want to reset your password?"
+        android:textColor="@color/black"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="180px"></TextView>
+    <TextView
+        android:id="@+id/login3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/color5"
+        android:layout_marginTop="-58px"
+        android:layout_marginLeft="840px"
+        android:autoLink="web"
+        android:textColorLink="@color/grey"
+        android:textStyle="bold"
+        android:clickable="true"></TextView>
+
+</LinearLayout>

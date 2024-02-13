@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/hue"
+    tools:context=".MainActivity17"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:background="@drawable/searchbar"
+        android:backgroundTint="@color/color4"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back12"
+            android:clickable="true"
+            android:layout_marginTop="180px"
+            android:layout_width="150px"
+            android:layout_marginLeft="20px"
+            android:background="@color/hue"
+            android:layout_height="80px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/arrow3_round"
+            android:backgroundTint="@color/color4"
+
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Cooper's"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="250px"></TextView>
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="-190px"
+            android:background="@mipmap/dial2"
+            android:layout_marginLeft="800px"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/videoCall"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="-100px"
+            android:background="@mipmap/video3"
+            android:layout_marginLeft="920px">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="community"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="360px"></TextView>
+
+        <View
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/circle3"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="400px"></View>
+        <View
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:background="@drawable/dot"
+            android:layout_marginTop="-170px"
+            android:layout_marginLeft="550px"></View>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hue"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="800px"
+            android:layout_height="60dp"
+            android:text="How was your experience with his\nmentorship? Satisfied??"
+            android:textColor="@color/color5"
+            android:paddingLeft="20px"
+            android:textAlignment="viewStart"
+            android:paddingTop="30px"
+            android:backgroundTint="@color/color3"
+            android:background="@drawable/inputfeild"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="240px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textColor="@color/grey"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="900px"></TextView>
+
+        <ImageView
+
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginTop="-160px"
+            android:layout_marginLeft="-40px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color3"/>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="40dp"
+            android:text="Worth it!!"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="30px"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/inputfeild"
+            android:layout_marginTop="-250px"
+            android:layout_marginLeft="300px"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:32"
+            android:textColor="@color/grey"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="320px"></TextView>
+
+        <ImageView
+
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginTop="-100px"
+            android:layout_marginLeft="-40px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="#C05AC3"/>
+
+        <TextView
+            android:layout_width="250px"
+            android:layout_height="40dp"
+            android:text="Impressive"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="30px"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/inputfeild"
+            android:layout_marginTop="-250px"
+            android:layout_marginLeft="300px"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:32"
+            android:textColor="@color/grey"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="320px"></TextView>
+
+        <ImageButton
+            android:src="@mipmap/ic5"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginTop="-40px"
+            android:layout_marginLeft="20px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circles"
+            android:backgroundTint="@color/color3"></ImageButton>
+
+        <TextView
+            android:layout_width="600px"
+            android:layout_height="40dp"
+            android:text="You are missing out! Go take it."
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="30px"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/inputfeild"
+            android:layout_marginTop="-250px"
+            android:layout_marginLeft="300px"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:32"
+            android:textColor="@color/grey"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="320px"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="170px"
+        android:background="@drawable/inputfeild"
+        android:backgroundTint="@color/color4"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="-370px">
+
+        <ImageButton
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="20px"
+            android:background="@mipmap/attach"></ImageButton>
+        <ImageButton
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="0px"
+            android:background="@mipmap/image"></ImageButton>
+        <EditText
+            android:layout_width="470px"
+            android:layout_height="40dp"
+            android:background="@drawable/inputfeild"
+            android:backgroundTint="@color/color4"
+            android:text="Type something ..."
+            android:textColor="@color/hue"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="20px"></EditText>
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="0px"
+            android:background="@mipmap/camera3"></ImageButton>
+
+        <ImageButton
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="0px"
+            android:background="@mipmap/mic"></ImageButton>
+
+        <ImageButton
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="0px"
+            android:background="@mipmap/send"></ImageButton>
+
+    </LinearLayout>
+    <View
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/circles"
+        android:layout_marginTop="-50px"
+        android:layout_marginLeft="450px"
+        android:backgroundTint="@color/color10"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/color10"
+        android:layout_marginTop="-130px">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/home2"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+
+
+        <ImageButton
+            android:id="@+id/search3"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/search3"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/chat3"
+
+            android:layout_marginLeft="220px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/myprofile"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@mipmap/person"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="-30px"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/color10"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="-1000px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="95px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@color/hue"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="300px"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/color12"
+            android:layout_marginTop="83px"
+            android:layout_marginLeft="120px"></TextView>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/add1"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_marginLeft="495px"
+        android:layout_marginTop="-250px"
+        android:src="@mipmap/plus"
+        android:backgroundTint="@color/color10"
+        android:background="@drawable/circles"
+        ></ImageButton>
+</LinearLayout>
