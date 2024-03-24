@@ -2,10 +2,19 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="MainActivity21">
+        <State />
+      </entry>
+      <entry key="NotifyNavigation()">
+        <State />
+      </entry>
       <entry key="Testcase">
         <State />
       </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="testLoginToHomeActivity()">
         <State />
       </entry>
     </value>

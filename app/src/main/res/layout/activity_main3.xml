@@ -78,6 +78,7 @@
             ></TextView>
 
         <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="950px"
             android:layout_height="40dp"
             android:background="@drawable/inputfeild"
@@ -87,8 +88,8 @@
             android:layout_marginLeft="60px"
             android:text="   Enter Email"
             android:textColor="@color/grey">
-
         </EditText>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,6 +102,7 @@
             ></TextView>
 
         <EditText
+            android:id="@+id/passwordEditText"
             android:text="   Enter Password"
             android:layout_width="950px"
             android:layout_height="40dp"
@@ -137,9 +139,8 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="@color/color4"
+            android:clickable="true" />
 
-            android:clickable="true"
-            ></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

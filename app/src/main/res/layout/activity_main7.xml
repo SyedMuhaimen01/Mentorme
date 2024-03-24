@@ -58,6 +58,7 @@
         ></TextView>
 
     <EditText
+        android:id="@+id/newPasswordEditText"
         android:layout_width="950px"
         android:layout_height="40dp"
         android:background="@drawable/inputfeild"
@@ -82,6 +83,7 @@
         ></TextView>
 
     <EditText
+        android:id="@+id/confirmPasswordEditText"
         android:layout_width="950px"
         android:layout_height="40dp"
         android:background="@drawable/inputfeild"

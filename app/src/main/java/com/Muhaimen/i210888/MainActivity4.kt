@@ -1,55 +1,88 @@
 package com.Muhaimen.i210888
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+
+class UserData
+    (
+
+    var name: String,
+    var email: String,
+    var contactNumber: String,
+    var country: String,
+    var city: String,
+    var password: String,
+    val pfp: String? = "",
+
+)
+
 
 class MainActivity4 : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
+        auth = FirebaseAuth.getInstance()
+
         val items = arrayOf("Select Country","Pakistan", "India", "Afghanistan")
-
-// Create an ArrayAdapter using the string array and a default spinner layout
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
-
-// Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-// Apply the adapter to the spinner
         val spinner: Spinner = findViewById(R.id.spinner)
         spinner.adapter = adapter
 
         val items2 = arrayOf("Select City","Islamabad", "Karachi", "Lahore")
-
-// Create an ArrayAdapter using the string array and a default spinner layout
         val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, items2)
-
-// Specify the layout to use when the list of choices appears
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-// Apply the adapter to the spinner
         val spinner2: Spinner = findViewById(R.id.spinner2)
         spinner2.adapter = adapter2
 
-
-        var button=findViewById<TextView>(R.id.signup)
+        val button = findViewById<TextView>(R.id.signup)
         button.setOnClickListener {
-            val intent1 = Intent(this, MainActivity5::class.java)
-            startActivity(intent1)
+            val name = findViewById<TextView>(R.id.nameEditText).text.toString()
+            val email = findViewById<TextView>(R.id.emailEditText).text.toString()
+            val contactNumber = findViewById<TextView>(R.id.contactNumberEditText).text.toString()
+            val country = spinner.selectedItem.toString()
+            val city = spinner2.selectedItem.toString()
+            val password = findViewById<TextView>(R.id.passwordEditText).text.toString()
+
+            val addOnCompleteListener = auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        val user = auth.currentUser
+                        val userData = UserData(name, email, contactNumber, country, city, password)
+                        FirebaseDatabase.getInstance().getReference("users")
+                            .child(user!!.uid)
+                            .setValue(userData)
+                            .addOnCompleteListener { task ->
+                                if (task.isSuccessful) {
+                                    val sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+                                    val editor = sharedPreferences.edit()
+                                    editor.putBoolean("isLoggedIn", true)
+                                    editor.apply()
+                                    startActivity(Intent(this, MainActivity5::class.java))
+                                    finish()
+                                } else {
+                                    // Handle database storing failure
+                                }
+                            }
+                    } else {
+                        // Handle authentication failure
+                    }
+                }
         }
 
-
-        var button2=findViewById<TextView>(R.id.loginBtn)
+        val button2=findViewById<TextView>(R.id.loginBtn)
         button2.setOnClickListener {
-            val intent2 = Intent(this, Main3Activity::class.java)
-            startActivity(intent2)
+            startActivity(Intent(this, Main3Activity::class.java))
         }
     }
 }
