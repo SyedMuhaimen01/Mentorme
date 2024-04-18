@@ -67,13 +67,16 @@
         android:background="@color/hue"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="380px"
-            android:layout_height="380px"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/color9"></View>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <LinearLayout
             android:layout_width="570px"
@@ -139,85 +142,6 @@
                 android:background="@mipmap/heart3"></View>
         </LinearLayout>
 
-        <View
-            android:layout_width="380px"
-            android:layout_height="380px"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/color9"></View>
-
-        <LinearLayout
-            android:layout_width="570px"
-            android:layout_height="130px"
-            android:layout_marginLeft="450px"
-            android:layout_marginTop="-140px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10px"
-                android:layout_marginTop="10px"
-                android:text="Sample 2"
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="240px"
-                android:layout_marginTop="10px"
-                android:text="$500/Session"
-                android:textColor="@color/yellowishgolden"
-                android:textSize="7dp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="-530px"
-                android:layout_marginTop="40px"
-                android:text="Lead- Technology officer"
-                android:textColor="@color/black"
-                android:textSize="7dp"
-                android:textStyle="bold"></TextView>
-
-            <ImageButton
-                android:layout_width="30px"
-                android:layout_height="30px"
-                android:layout_marginLeft="-230px"
-                android:layout_marginTop="90px"
-                android:background="@drawable/dot2"
-                android:backgroundTint="@color/grey"
-                android:scaleType="fitCenter"></ImageButton>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10px"
-                android:layout_marginTop="75px"
-                android:text=" Not Available"
-                android:textColor="@color/grey"
-                android:textSize="10dp"></TextView>
-
-            <View
-                android:layout_width="60px"
-                android:layout_height="60px"
-                android:layout_marginLeft="230px"
-                android:layout_marginTop="70px"
-                android:background="@mipmap/heart2"></View>
-        </LinearLayout>
-        <View
-            android:layout_width="380px"
-            android:layout_height="380px"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/color9"></View>
-
         <LinearLayout
             android:layout_width="570px"
             android:layout_height="130px"
@@ -281,77 +205,7 @@
                 android:layout_marginTop="70px"
                 android:background="@mipmap/heart2"></View>
         </LinearLayout>
-        <View
-            android:layout_width="380px"
-            android:layout_height="380px"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/color9"></View>
 
-        <LinearLayout
-            android:layout_width="570px"
-            android:layout_height="130px"
-            android:layout_marginLeft="450px"
-            android:layout_marginTop="-140px"
-            android:background="@drawable/inputfeild"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10px"
-                android:layout_marginTop="10px"
-                android:text="Sample 4"
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="240px"
-                android:layout_marginTop="10px"
-                android:text="$500/Session"
-                android:textColor="@color/yellowishgolden"
-                android:textSize="7dp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="-530px"
-                android:layout_marginTop="40px"
-                android:text="Lead- Technology officer"
-                android:textColor="@color/black"
-                android:textSize="7dp"
-                android:textStyle="bold"></TextView>
-
-            <ImageButton
-                android:layout_width="30px"
-                android:layout_height="30px"
-                android:layout_marginLeft="-230px"
-                android:layout_marginTop="90px"
-                android:background="@drawable/dot2"
-                android:backgroundTint="@color/lightgreen"
-                android:scaleType="fitCenter"></ImageButton>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10px"
-                android:layout_marginTop="75px"
-                android:text="Available"
-                android:textColor="@color/lightgreen"
-                android:textSize="10dp"></TextView>
-
-            <View
-                android:layout_width="60px"
-                android:layout_height="60px"
-                android:layout_marginLeft="280px"
-                android:layout_marginTop="70px"
-                android:background="@mipmap/redheart"></View>
-        </LinearLayout>
     </LinearLayout>
 
     <View

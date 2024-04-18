@@ -1,4 +1,5 @@
 package com.Muhaimen.i210888
+
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
@@ -31,6 +32,7 @@ class MainActivity21 : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main21)
@@ -56,15 +58,52 @@ class MainActivity21 : AppCompatActivity() {
             finish()
         }
 
-        var button5 = findViewById<ImageButton>(R.id.edit)
+        val button5 = findViewById<ImageButton>(R.id.edit)
         button5.setOnClickListener {
             val intent5 = Intent(this, MainActivity22::class.java)
             startActivity(intent5)
         }
 
-        var button4 = findViewById<ImageButton>(R.id.home3)
+        val button4 = findViewById<ImageButton>(R.id.home3)
         button4.setOnClickListener {
             onBackPressed()
+        }
+
+        // Add button listeners for other buttons
+        val buttonHome = findViewById<ImageButton>(R.id.home)
+        buttonHome.setOnClickListener {
+            val intent11 = Intent(this, MainActivity8::class.java)
+            startActivity(intent11)
+        }
+
+        val bookedSession = findViewById<TextView>(R.id.bookedSessions)
+        bookedSession.setOnClickListener {
+            val intent11 = Intent(this, MainActivity24::class.java)
+            startActivity(intent11)
+        }
+
+        val buttonSearch = findViewById<ImageButton>(R.id.search)
+        buttonSearch.setOnClickListener {
+            val intent1 = Intent(this, MainActivity9::class.java)
+            startActivity(intent1)
+        }
+
+        val buttonChat = findViewById<ImageButton>(R.id.chat)
+        buttonChat.setOnClickListener {
+            val intent6 = Intent(this, MainActivity15::class.java)
+            startActivity(intent6)
+        }
+
+        val buttonMyProfile = findViewById<ImageButton>(R.id.myprofile)
+        buttonMyProfile.setOnClickListener {
+            val intent4 = Intent(this, MainActivity21::class.java)
+            startActivity(intent4)
+        }
+
+        val buttonAdd = findViewById<ImageButton>(R.id.add)
+        buttonAdd.setOnClickListener {
+            val intent3 = Intent(this, MainActivity13::class.java)
+            startActivity(intent3)
         }
 
         // Fetch and display user profile information
@@ -84,13 +123,13 @@ class MainActivity21 : AppCompatActivity() {
         Log.d("MainActivity21", "displayUserProfile() called")
         val userId = auth.currentUser?.uid
         userId?.let { uid ->
-            val userRef = database.reference.child("users").child(uid)
+            val userRef = database.reference.child("Users").child(uid)
             userRef.addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     Log.d("MainActivity21", "onDataChange()")
                     val username = snapshot.child("name").getValue(String::class.java)
                     val location = snapshot.child("city").getValue(String::class.java)
-                    val imageUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
+                    val imageUrl = snapshot.child("profilePicture").getValue(String::class.java)
                     Log.d("MainActivity21", "Username: $username, Location: $location, Image URL: $imageUrl")
 
                     // Set fetched username and location to TextViews
@@ -112,6 +151,4 @@ class MainActivity21 : AppCompatActivity() {
             })
         }
     }
-
-
 }

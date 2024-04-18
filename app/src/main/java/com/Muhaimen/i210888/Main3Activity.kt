@@ -45,7 +45,7 @@ class Main3Activity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
-                        val sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+                        val sharedPreferences = getSharedPreferences("Users", Context.MODE_PRIVATE)
                         val editor = sharedPreferences.edit()
                         editor.putBoolean("isLoggedIn", true)
                         editor.apply()

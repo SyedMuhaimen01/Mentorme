@@ -41,6 +41,7 @@
     ></TextView>
 
     <TextView
+        android:id="@+id/nameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jhon Cooper"
@@ -52,16 +53,15 @@
         android:layout_marginTop="20px"
         ></TextView>
 
-    <ImageButton
-
+    <ImageView
+        android:id="@+id/profileImage"
         android:layout_width="400px"
         android:layout_height="400px"
         android:layout_marginTop="-320px"
         android:layout_marginLeft="700px"
         android:src="@mipmap/pfp_round"
         android:scaleType="centerCrop"
-        android:background="@drawable/circles"
-        android:backgroundTint="@color/color3"></ImageButton>
+        android:background="@drawable/circles" />
 </LinearLayout>
 
     <LinearLayout
@@ -72,6 +72,7 @@
         android:orientation="vertical"
         >
         <TextView
+            android:id="@+id/TitleEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="UX Designer at"
@@ -82,24 +83,14 @@
             android:layout_marginTop="60px"
             ></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Google"
-            android:textColor="@color/white"
-            android:textSize="28dp"
-            android:fontFamily="sans-serif"
-            android:layout_marginLeft="60px"
-            android:layout_marginTop="20px"
-            ></TextView>
-
         <ImageButton
             android:layout_width="80px"
             android:layout_height="80px"
             android:src="@mipmap/star"
-            android:layout_marginTop="-200px"
+            android:layout_marginTop="-100px"
             android:layout_marginLeft="830px"></ImageButton>
         <TextView
+            android:id="@+id/rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4.8"
@@ -132,6 +123,7 @@
         ></TextView>
     
     <TextView
+        android:id="@+id/descriptionEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20px"

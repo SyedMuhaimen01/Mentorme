@@ -86,7 +86,7 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="10px"
             android:layout_marginLeft="60px"
-            android:text="   Enter Name"
+            android:hint="   Enter Name"
             android:textColor="@color/grey">
         </EditText>
 
@@ -109,7 +109,7 @@
             android:layout_marginTop="10px"
             android:textSize="15dp"
             android:layout_marginLeft="60px"
-            android:text="   Enter Email"
+            android:hint="   Enter Email"
             android:textColor="@color/grey">
         </EditText>
 
@@ -132,7 +132,7 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="10px"
             android:layout_marginLeft="60px"
-            android:text="   Enter Contact Number"
+            android:hint="   Enter Contact Number"
             android:textColor="@color/grey">
         </EditText>
 
@@ -201,7 +201,7 @@
             android:textSize="15dp"
             android:layout_marginTop="10px"
             android:layout_marginLeft="60px"
-            android:text="   Enter your Password"
+            android:hint="   Enter your Password"
             android:textColor="@color/grey">
         </EditText>
         <TextView

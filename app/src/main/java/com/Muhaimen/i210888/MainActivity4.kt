@@ -22,6 +22,28 @@ class UserData
     val pfp: String? = "",
 
 )
+class Mentor (
+    val id: String,
+    val name: String,
+    val title: String,
+    val description: String,
+    val imagePath: String,
+    val sessionPrice: Double,
+    val availability: String,
+    val rating: Double
+){
+
+    constructor() : this(
+        "",
+        "",
+        "",
+        "",
+        "",
+        0.0,
+        "",
+        0.0
+    )
+}
 
 
 class MainActivity4 : AppCompatActivity() {
@@ -59,12 +81,12 @@ class MainActivity4 : AppCompatActivity() {
                     if (task.isSuccessful) {
                         val user = auth.currentUser
                         val userData = UserData(name, email, contactNumber, country, city, password)
-                        FirebaseDatabase.getInstance().getReference("users")
+                        FirebaseDatabase.getInstance().getReference("Users")
                             .child(user!!.uid)
                             .setValue(userData)
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
-                                    val sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+                                    val sharedPreferences = getSharedPreferences("users", Context.MODE_PRIVATE)
                                     val editor = sharedPreferences.edit()
                                     editor.putBoolean("isLoggedIn", true)
                                     editor.apply()

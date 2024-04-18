@@ -119,7 +119,7 @@ class MainActivity22 : AppCompatActivity() {
         val userUid = auth.currentUser!!.uid // Get the current user's UID
 
         // Reference the "user" node with the current user's UID
-        val userRef = FirebaseDatabase.getInstance().reference.child("users").child(userUid)
+        val userRef = FirebaseDatabase.getInstance().reference.child("Users").child(userUid)
 
         // Update the user data
         userRef.apply {
@@ -191,7 +191,7 @@ class MainActivity22 : AppCompatActivity() {
                     ref.downloadUrl.addOnSuccessListener { uri ->
                         // Save the download URL to the Firebase Database
                         val user = FirebaseAuth.getInstance().currentUser
-                        val userRef = databaseRef.child(user!!.uid).child("UserInfo")
+                        val userRef = databaseRef.child(user!!.uid).child("Users")
                         userRef.child("profilePicture").setValue(uri.toString())
 
                         // Update the shared preferences with the new image URL

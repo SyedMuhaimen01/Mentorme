@@ -101,6 +101,7 @@
             android:background="@drawable/dashedrectangle">
 
             <ImageView
+                android:id="@+id/uploadimage"
                 android:layout_width="130px"
                 android:layout_height="130px"
                 android:src="@mipmap/camera"
@@ -128,6 +129,7 @@
             ></TextView>
 
         <EditText
+            android:id="@+id/nameEditText"
             android:layout_width="950px"
             android:layout_height="35dp"
             android:background="@drawable/inputfeild"
@@ -135,8 +137,9 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="10px"
             android:layout_marginLeft="60px"
-            android:text="   Enter Name"
-            android:textColor="@color/grey">
+            android:hint="   Enter Name"
+            android:textColor="@color/grey"
+            tools:ignore="ExtraText">
 
         </EditText>
 
@@ -151,6 +154,7 @@
             ></TextView>
 
         <EditText
+            android:id="@+id/descriptionEditText"
             android:layout_width="950px"
             android:layout_height="35dp"
             android:background="@drawable/inputfeild"
@@ -158,7 +162,7 @@
             android:textSize="15dp"
             android:layout_marginTop="10px"
             android:layout_marginLeft="60px"
-            android:text="   Enter Description"
+            android:hint="   Enter Description"
             android:textColor="@color/grey">
 
         </EditText>

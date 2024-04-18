@@ -41,6 +41,7 @@
             ></TextView>
 
         <TextView
+            android:id="@+id/nameEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jhon Cooper"
@@ -52,7 +53,8 @@
             android:layout_marginTop="20px"
             ></TextView>
 
-        <ImageButton
+        <ImageView
+            android:id="@+id/profileImageView"
             android:src="@mipmap/pfp"
             android:layout_width="400px"
             android:layout_height="400px"
@@ -60,7 +62,7 @@
             android:layout_marginLeft="700px"
             android:scaleType="centerCrop"
             android:background="@drawable/circles"
-            android:backgroundTint="@color/color3"></ImageButton>
+            android:backgroundTint="@color/color3"></ImageView>
     </LinearLayout>
 
     <LinearLayout
@@ -93,6 +95,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/reviewDescription"
         android:layout_width="940px"
         android:layout_height="500px"
         android:layout_marginLeft="60px"
@@ -102,62 +105,22 @@
         android:shadowColor="@color/black"
         android:outlineSpotShadowColor="@color/black"
         android:shadowDy="10"
-        android:text="Type your experience..."
+        android:hint="Type your experience..."
         android:textColor="@color/grey"
         android:textAlignment="viewStart"
         android:paddingBottom="300px"
         android:paddingLeft="30px"
         android:shadowDx="10"></EditText>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150px"
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:layout_gravity="center_horizontal"/>
 
-        android:layout_marginTop="80px"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:src="@mipmap/star5"
-            android:layout_width="140px"
-            android:layout_height="140px"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="140px">
-
-        </ImageButton>
-        <ImageButton
-            android:src="@mipmap/star5"
-            android:layout_width="140px"
-            android:layout_height="140px"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="20px">
-
-        </ImageButton>
-        <ImageButton
-            android:src="@mipmap/star5"
-            android:layout_width="140px"
-            android:layout_height="140px"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="20px">
-
-        </ImageButton>
-        <ImageButton
-            android:src="@mipmap/star5"
-            android:layout_width="140px"
-            android:layout_height="140px"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="20px">
-
-        </ImageButton>
-        <ImageButton
-            android:src="@mipmap/star5"
-            android:layout_width="140px"
-            android:layout_height="140px"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="20px">
-
-        </ImageButton>
-
-
-    </LinearLayout>
 
     <TextView
         android:id="@+id/submit"

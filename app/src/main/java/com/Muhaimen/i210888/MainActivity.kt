@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mAuth = FirebaseAuth.getInstance()
         // Get the flag from shared preferences
-        val sharedPreferences = getSharedPreferences("User", MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Users", MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
         if (isLoggedIn)
         {
