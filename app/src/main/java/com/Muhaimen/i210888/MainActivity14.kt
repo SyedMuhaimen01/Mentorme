@@ -3,18 +3,14 @@ package com.Muhaimen.i210888
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.CalendarView
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.CircleCrop
-import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import java.util.*
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CircleCrop
+import com.bumptech.glide.request.RequestOptions
 
 data class Booking(
     val id: String,
@@ -45,7 +41,7 @@ class MainActivity14 : AppCompatActivity() {
         setContentView(R.layout.activity_main14)
 
         auth = FirebaseAuth.getInstance()
-        databaseReference = FirebaseDatabase.getInstance().getReference("mentors")
+        databaseReference = FirebaseDatabase.getInstance().getReference("bookings")
 
         backButton = findViewById(R.id.back9)
         book = findViewById(R.id.book)
@@ -84,17 +80,14 @@ class MainActivity14 : AppCompatActivity() {
 
         findViewById<TextView>(R.id.nameEditText).text = mentorName
         val imageView = findViewById<ImageView>(R.id.profileImage)
-        val requestOptions = RequestOptions().transform(CircleCrop())
 
-        if (!mentorProfileImageUri.isNullOrEmpty()) {
-            Glide.with(this)
-                .load(Uri.parse(mentorProfileImageUri))
-                .apply(requestOptions)
-                .into(imageView)
-        }
+        Glide.with(this)
+            .load(Uri.parse(mentorProfileImageUri))
+            .apply(RequestOptions().transform(CircleCrop()))
+            .into(imageView)
 
         book.setOnClickListener {
-            bookAppointment()
+            bookAppointment(mentorId)
         }
 
         // Load mentor's rating from the database
@@ -110,8 +103,7 @@ class MainActivity14 : AppCompatActivity() {
         timeslot3.isSelected = time == "12:00 PM"
     }
 
-    private fun bookAppointment() {
-        val mentorId = intent.getStringExtra("mentorId")
+    private fun bookAppointment(mentorId: String?) {
         val userId = auth.currentUser?.uid
 
         if (userId != null && mentorId != null) {
@@ -126,7 +118,7 @@ class MainActivity14 : AppCompatActivity() {
             val booking = Booking(bookingId, userId, mentorId, selectedDate, selectedTime)
 
             // Save booking to the database
-            databaseReference.child(mentorId).child("bookings").child(bookingId).setValue(booking)
+            databaseReference.child(bookingId).setValue(booking)
                 .addOnSuccessListener {
                     Toast.makeText(this@MainActivity14, "Appointment booked successfully", Toast.LENGTH_SHORT).show()
                     // Navigate to the success screen or perform any other action
@@ -140,28 +132,10 @@ class MainActivity14 : AppCompatActivity() {
     }
 
     private fun loadMentorRating(mentorId: String) {
-        databaseReference.child(mentorId).child("rating").addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val mentorRating = dataSnapshot.getValue(Float::class.java)
-                ratingTextView.text = mentorRating?.toString() ?: "0.0"
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                Toast.makeText(this@MainActivity14, "Failed to load mentor rating: ${databaseError.message}", Toast.LENGTH_SHORT).show()
-            }
-        })
+        // Load mentor's rating from the database and display it
     }
 
     private fun loadSessionPrice(mentorId: String) {
-        databaseReference.child(mentorId).child("sessionPrice").addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val sessionPrice = dataSnapshot.getValue(Double::class.java)
-                sessionPriceTextView.text = sessionPrice?.toString() ?: "0.0"
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                Toast.makeText(this@MainActivity14, "Failed to load session price: ${databaseError.message}", Toast.LENGTH_SHORT).show()
-            }
-        })
+        // Load mentor's session price from the database and display it
     }
 }

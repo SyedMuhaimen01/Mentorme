@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:background="@color/color4"
+    android:background="@color/hue"
     tools:context=".MainActivity15"
     android:orientation="vertical">
     <LinearLayout
@@ -136,117 +136,22 @@
             android:layout_marginLeft="60px"
             android:layout_marginTop="60px"></TextView>
 
-        <ImageButton
 
-            android:layout_width="400px"
-            android:layout_height="400px"
-            android:layout_marginTop="-50px"
-            android:src="@mipmap/ic1"
-            android:layout_marginLeft="-30px"
-            android:scaleType="centerCrop"
-            android:background="@drawable/circles"
-            android:backgroundTint="@color/color3"></ImageButton>
-
-        <TextView
-            android:id="@+id/msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/color5"
-            android:text="John Cooper"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:layout_marginTop="-260px"
-            android:layout_marginLeft="300px"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textColor="#D50B0B"
-            android:text="1 New Message"
-            android:layout_marginTop="0px"
-            android:layout_marginLeft="300px"
-            ></TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300px"
-        android:layout_marginTop="5px"
-        android:background="@color/hue"
-        android:orientation="vertical">
-
-        <ImageButton
-
-            android:layout_width="400px"
-            android:layout_height="400px"
-            android:layout_marginTop="-50px"
-            android:src="@mipmap/ic2"
-            android:layout_marginLeft="-30px"
-            android:scaleType="centerCrop"
-            android:background="@drawable/circles"
-            android:backgroundTint="@color/color3"></ImageButton>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/color5"
-            android:text="Jack Watson"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:layout_marginTop="-260px"
-            android:layout_marginLeft="300px"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textColor="@color/grey"
-            android:text="No New Messages"
-            android:layout_marginTop="0px"
-            android:layout_marginLeft="300px"
-            ></TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300px"
-        android:layout_marginTop="5px"
-        android:background="@color/hue"
-        android:orientation="vertical">
-
-        <ImageButton
-
-            android:layout_width="400px"
-            android:layout_height="400px"
-            android:layout_marginTop="-50px"
-            android:layout_marginLeft="-30px"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic3"
-            android:background="@drawable/circles"
-            android:backgroundTint="@color/color3"></ImageButton>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/color5"
-            android:text="Emma Philips"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:layout_marginTop="-260px"
-            android:layout_marginLeft="300px"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textColor="@color/grey"
-            android:text="No New Messages"
-            android:layout_marginTop="0px"
-            android:layout_marginLeft="300px"
-            ></TextView>
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_marginTop="-100dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/hue"
-        android:layout_marginTop="5px"></LinearLayout>
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
     <View
         android:layout_width="200px"
         android:layout_height="200px"
@@ -255,6 +160,7 @@
         android:layout_marginLeft="450px"
         android:backgroundTint="@color/color10"></View>
     <LinearLayout
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="200px"
         android:background="@color/color10"

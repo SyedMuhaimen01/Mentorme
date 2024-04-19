@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">i210888</string>
+    <string name="token">YOUR_TOKEN_HERE</string>
+    <string name="channel">YOUR_CHANNEL_NAME_HERE</string>
+    <string name="appId">YOUR_APP_ID_HERE</string>
+
 </resources>

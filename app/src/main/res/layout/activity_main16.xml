@@ -60,108 +60,23 @@
 
 
 </LinearLayout>
-    <TextView
-        android:layout_width="350px"
-        android:layout_height="40dp"
-        android:text="Hello, You there?"
-        android:textColor="@color/color5"
-        android:textAlignment="center"
-        android:paddingTop="30px"
-        android:backgroundTint="@color/color3"
-        android:background="@drawable/inputfeild"
-        android:layout_marginTop="700px"
-        android:layout_marginLeft="700px"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:30"
-        android:textColor="@color/grey"
-        android:layout_marginTop="5px"
-        android:layout_marginLeft="900px"></TextView>
-
-    <ImageButton
-        android:src="@mipmap/ic4"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginTop="-160px"
-        android:layout_marginLeft="-30px"
-        android:scaleType="centerCrop"
-        android:background="@drawable/circles"
-        android:backgroundTint="@color/color3"></ImageButton>
-
-    <TextView
-        android:layout_width="130px"
-        android:layout_height="40dp"
-        android:text="Yes"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:paddingTop="30px"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/inputfeild"
-        android:layout_marginTop="-250px"
-        android:layout_marginLeft="300px"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:32"
-        android:textColor="@color/grey"
-        android:layout_marginTop="5px"
-        android:layout_marginLeft="300px"></TextView>
 
 
-    <TextView
-        android:layout_width="450px"
-        android:layout_height="40dp"
-        android:text="I need your guidance."
-        android:textColor="@color/color5"
-        android:textAlignment="center"
-        android:paddingTop="30px"
-        android:backgroundTint="@color/color3"
-        android:background="@drawable/inputfeild"
-        android:layout_marginTop="0px"
-        android:layout_marginLeft="600px"></TextView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:30"
-        android:textColor="@color/grey"
-        android:layout_marginTop="5px"
-        android:layout_marginLeft="900px"></TextView>
 
-    <ImageButton
-        android:src="@mipmap/ic4"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginTop="-160px"
-        android:layout_marginLeft="-30px"
-        android:scaleType="centerCrop"
-        android:background="@drawable/circles"
-        android:backgroundTint="@color/color3"></ImageButton>
 
-    <TextView
-        android:layout_width="450px"
-        android:layout_height="40dp"
-        android:text="How can I help you?"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:paddingTop="30px"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/inputfeild"
-        android:layout_marginTop="-250px"
-        android:layout_marginLeft="300px"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:32"
-        android:textColor="@color/grey"
-        android:layout_marginTop="5px"
-        android:layout_marginLeft="300px"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        app:stackFromEnd="true"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/cardView"
         android:layout_width="1000px"
         android:layout_height="170px"
         android:background="@drawable/inputfeild"

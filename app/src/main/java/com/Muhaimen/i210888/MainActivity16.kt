@@ -1,58 +1,74 @@
 package com.Muhaimen.i210888
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.*
 
+data class Chat(
+    val chatId: String,
+    val senderId: String,
+    val receiverId: String,
+    var message: String,
+    val time: String,
+    val type: String,
+    val Editable: String
+)
 class MainActivity16 : AppCompatActivity() {
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: chatAdapter
+    private val chatList = ArrayList<Chat>() // Assuming Chat is your model class
+    private var firebaseUser: FirebaseUser? = null
+    private var reference: DatabaseReference? = null
+    private var userId: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main16)
 
-        var button=findViewById<ImageButton>(R.id.back11)
-        button.setOnClickListener {
-            onBackPressed()
-        }
+        // Initialize RecyclerView and adapter
+        recyclerView = findViewById(R.id.userRV)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = chatAdapter(this, chatList) { /* Handle double tap logic here */ }
+        recyclerView.adapter = adapter
 
+        // Initialize Firebase references
+        firebaseUser = FirebaseAuth.getInstance().currentUser
+        reference = FirebaseDatabase.getInstance().getReference("chats")
 
-        var button5=findViewById<ImageButton>(R.id.chat)
-        button5.setOnClickListener {
-            val intent5 = Intent(this, MainActivity15::class.java)
-            startActivity(intent5)
+        // Get userId from intent
+        userId = intent.getStringExtra("userId")
 
+        // Load messages
+        readMessage(firebaseUser!!.uid, userId!!)
+    }
 
+    private fun readMessage(senderId: String, receiverId: String) {
+        reference?.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                chatList.clear()
+                for (dataSnapShot: DataSnapshot in snapshot.children) {
+                    val chat = dataSnapShot.getValue(Chat::class.java)
+                    if ((chat!!.senderId == senderId && chat.receiverId == receiverId) ||
+                        (chat.senderId == receiverId && chat.receiverId == senderId)) {
+                        chatList.add(chat)
+                    }
+                }
+                // Notify adapter of changes
+                adapter.notifyDataSetChanged()
 
-        }
-        var button4=findViewById<ImageButton>(R.id.myprofile)
-        button4.setOnClickListener {
-            val intent4 = Intent(this, MainActivity21::class.java)
-            startActivity(intent4)
-        }
+                // Scroll to the bottom of the chat list after the data is loaded
+                if (chatList.isNotEmpty()) {
+                    recyclerView.scrollToPosition(chatList.size - 1)
+                }
+            }
 
-        var button3=findViewById<ImageButton>(R.id.home5)
-        button3.setOnClickListener {
-            val intent3 = Intent(this, MainActivity8::class.java)
-            startActivity(intent3)
-        }
-
-        var button8=findViewById<ImageButton>(R.id.camera)
-        button8.setOnClickListener {
-            val intent8= Intent(this, MainActivity18::class.java)
-            startActivity(intent8)
-        }
-
-        var button9=findViewById<ImageButton>(R.id.videoCall)
-        button9.setOnClickListener {
-            val intent9 = Intent(this, MainActivity20::class.java)
-            startActivity(intent9)
-        }
-
-
-        var button2=findViewById<ImageButton>(R.id.call)
-        button2.setOnClickListener {
-            val intent2 = Intent(this, MainActivity23::class.java)
-            startActivity(intent2)
-        }
+            override fun onCancelled(error: DatabaseError) {
+                // Handle onCancelled
+            }
+        })
     }
 }

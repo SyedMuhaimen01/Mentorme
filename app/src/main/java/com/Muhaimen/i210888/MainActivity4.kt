@@ -19,7 +19,7 @@ class UserData
     var country: String,
     var city: String,
     var password: String,
-    val pfp: String? = "",
+    val profilePicture: String? = "",
 
 )
 class Mentor (
