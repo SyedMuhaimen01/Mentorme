@@ -30,6 +30,7 @@
             ></ImageButton>
 
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Cooper"
@@ -68,7 +69,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userRV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         app:layout_constraintBottom_toTopOf="@id/cardView"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="10dp"
@@ -82,7 +83,7 @@
         android:background="@drawable/inputfeild"
         android:backgroundTint="@color/color4"
         android:layout_marginLeft="40px"
-        android:layout_marginTop="100px">
+        android:layout_marginTop="-20dp">
 
         <ImageButton
             android:layout_width="100px"
@@ -91,17 +92,19 @@
             android:layout_marginLeft="20px"
             android:background="@mipmap/attach"></ImageButton>
         <ImageButton
+            android:id="@+id/gallery"
             android:layout_width="100px"
             android:layout_height="100px"
             android:layout_marginTop="30px"
             android:layout_marginLeft="0px"
             android:background="@mipmap/image"></ImageButton>
         <EditText
+            android:id="@+id/msgFeild"
             android:layout_width="470px"
             android:layout_height="40dp"
             android:background="@drawable/inputfeild"
             android:backgroundTint="@color/color4"
-            android:text="Type something ..."
+            android:hint="Type something ..."
             android:textColor="@color/hue"
             android:layout_marginLeft="10px"
             android:layout_marginTop="20px"></EditText>
@@ -122,6 +125,7 @@
             android:background="@mipmap/mic"></ImageButton>
 
         <ImageButton
+            android:id="@+id/send"
             android:layout_width="100px"
             android:layout_height="100px"
             android:layout_marginTop="30px"

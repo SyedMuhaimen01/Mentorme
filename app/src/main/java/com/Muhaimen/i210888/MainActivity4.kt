@@ -10,18 +10,19 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
-class UserData
-    (
+data class UserData(
+    var name: String = "",
+    var email: String = "",
+    var contactNumber: String = "",
+    var country: String = "",
+    var city: String = "",
+    var password: String = "",
+    val profilePicture: String? = ""
+) {
+    // Default constructor
+    constructor() : this("", "", "", "", "", "", null)
+}
 
-    var name: String,
-    var email: String,
-    var contactNumber: String,
-    var country: String,
-    var city: String,
-    var password: String,
-    val profilePicture: String? = "",
-
-)
 class Mentor (
     val id: String,
     val name: String,

@@ -3,6 +3,7 @@ package com.Muhaimen.i210888
 import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
+import android.util.Log
 import android.view.GestureDetector
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -14,12 +15,15 @@ import android.widget.Toast
 import android.widget.VideoView
 import androidx.core.view.GestureDetectorCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.squareup.picasso.Picasso
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
-class chatAdapter(private val context: Context, private val chatList: MutableList<Chat>, private val onMessageDoubleTap: (String) -> Unit): RecyclerView.Adapter<chatAdapter.ViewHolder>() {
+class chatAdapter(
+    private val context: Context,
+    private val chatList: MutableList<Chat>,
+    private val onMessageDoubleTap: (String) -> Unit
+) : RecyclerView.Adapter<chatAdapter.ViewHolder>() {
 
     private val MSG_TYPE_LEFT = 0
     private val MSG_TYPE_RIGHT = 1
@@ -30,7 +34,8 @@ class chatAdapter(private val context: Context, private val chatList: MutableLis
     private val VID_MSG_TYP_LEFT = 4
     private val VID_MSG_TYP_RIGHT = 5
 
-    private var firebaseUser: FirebaseUser? = null
+    private val auth = FirebaseAuth.getInstance()
+    private val currentUser = auth.currentUser
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = when (viewType) {
@@ -54,9 +59,16 @@ class chatAdapter(private val context: Context, private val chatList: MutableLis
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val chat = chatList[position]
 
-        when(chat.type) {
+        Log.d(TAG, "onBindViewHolder: Position $position, Message: ${chat.message}, Type: ${chat.type}")
+
+        when (chat.type) {
             "message" -> {
-                holder.msg?.text = chat.message
+                // Handle message type
+                if (chat.senderId == currentUser?.uid) {
+                    holder.bindRightMessage(chat.message, chat.time)
+                } else {
+                    holder.bindLeftMessage(chat.message, chat.time)
+                }
 
                 holder.itemView.setOnLongClickListener {
                     val position = holder.adapterPosition
@@ -81,9 +93,13 @@ class chatAdapter(private val context: Context, private val chatList: MutableLis
                 }
             }
             "image" -> {
+                // Handle image type
+                Log.d(TAG, "onBindViewHolder: Image message: ${chat.message}")
                 Picasso.get().load(chat.message).into(holder.image)
             }
             "video" -> {
+                // Handle video type
+                Log.d(TAG, "onBindViewHolder: Video message: ${chat.message}")
                 holder.videoPlayer?.apply {
                     setVideoURI(Uri.parse(chat.message))
                     setOnPreparedListener { mediaPlayer ->
@@ -102,9 +118,9 @@ class chatAdapter(private val context: Context, private val chatList: MutableLis
         holder.time?.text = chat.time
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val msg: TextView? = view.findViewById(R.id.textView)
-        val chatView: TextView? = view.findViewById(R.id.textView)
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val msgLeft: TextView? = view.findViewById(R.id.lefttextView)
+        val msgRight: TextView? = view.findViewById(R.id.righttextView)
         val time: TextView? = view.findViewById(R.id.time)
         val image: ImageView? = view.findViewById(R.id.imageView)
         val videoPlayer: VideoView? = view.findViewById(R.id.VideoView)
@@ -131,21 +147,35 @@ class chatAdapter(private val context: Context, private val chatList: MutableLis
                 }
             })
 
-            chatView?.setOnTouchListener { _, event ->
+            itemView.setOnTouchListener { _, event ->
                 gestureDetector.onTouchEvent(event)
                 true
             }
         }
+
+        fun bindLeftMessage(message: String, time: String) {
+            Log.d(TAG, "bindLeftMessage: Message: $message, Time: $time")
+            msgLeft?.text = message
+            this.time?.text = time
+        }
+
+        fun bindRightMessage(message: String, time: String) {
+            Log.d(TAG, "bindRightMessage: Message: $message, Time: $time")
+            msgRight?.text = message
+            this.time?.text = time
+        }
+
     }
 
     override fun getItemViewType(position: Int): Int {
-        firebaseUser = FirebaseAuth.getInstance().currentUser
-        val isImage = chatList[position].type
-
-        return if (chatList[position].senderId == firebaseUser!!.uid) {
-            if (isImage == "image") IMG_MSG_TYP_RIGHT else if(isImage == "video") VID_MSG_TYP_RIGHT else MSG_TYPE_RIGHT
+        return if (chatList[position].senderId == currentUser?.uid) {
+            if (chatList[position].type == "image") IMG_MSG_TYP_RIGHT else if (chatList[position].type == "video") VID_MSG_TYP_RIGHT else MSG_TYPE_RIGHT
         } else {
-            if (isImage == "image") IMG_MSG_TYP_LEFT else if(isImage == "video") VID_MSG_TYP_LEFT else MSG_TYPE_LEFT
+            if (chatList[position].type == "image") IMG_MSG_TYP_LEFT else if (chatList[position].type == "video") VID_MSG_TYP_LEFT else MSG_TYPE_LEFT
         }
+    }
+
+    companion object {
+        private const val TAG = "chatAdapter"
     }
 }

@@ -12,10 +12,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-
+import com.google.firebase.database.DatabaseError
 class MainActivity15 : AppCompatActivity() {
     private lateinit var userAdapter: userAdapter
     private val userList: ArrayList<UserData> = ArrayList()
@@ -69,7 +70,11 @@ class MainActivity15 : AppCompatActivity() {
         populateUserListFromDatabase()
     }
 
+
     private fun populateUserListFromDatabase() {
+        val auth = FirebaseAuth.getInstance()
+        val currentUserUid = auth.currentUser?.uid
+
         // Assuming you have a reference to your Firebase Database
         val databaseReference = FirebaseDatabase.getInstance().getReference("Users")
 
@@ -84,7 +89,10 @@ class MainActivity15 : AppCompatActivity() {
                     // Parse user data and add it to the userList
                     val user = dataSnapshot.getValue(UserData::class.java)
                     user?.let {
-                        userList.add(it)
+                        // Check if the userId is not null and not equal to the current user's UID
+                        if (dataSnapshot.key != currentUserUid) {
+                            userList.add(it)
+                        }
                     }
                 }
 

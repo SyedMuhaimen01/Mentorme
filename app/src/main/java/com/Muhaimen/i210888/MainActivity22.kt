@@ -74,47 +74,6 @@ class MainActivity22 : AppCompatActivity() {
         loadUserData()
     }
 
-    private fun loadUserData() {
-        databaseRef.addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    val name = snapshot.child("name").getValue(String::class.java)
-                    val email = snapshot.child("email").getValue(String::class.java)
-                    val contactNumber = snapshot.child("contactNumber").getValue(String::class.java)
-                    val country = snapshot.child("country").getValue(String::class.java)
-                    val city = snapshot.child("city").getValue(String::class.java)
-                    val profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
-
-                    populateFields(name, email, contactNumber, country, city)
-
-                    // Load profile picture using Glide
-                    profilePictureUrl?.let { url ->
-                        val profileImageView = findViewById<ShapeableImageView>(R.id.pfp)
-                        Glide.with(this@MainActivity22)
-                            .load(url)
-                            .into(profileImageView)
-                    }
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                // Handle error
-            }
-        })
-    }
-
-    private fun populateFields(name: String?, email: String?, contactNumber: String?, country: String?, city: String?) {
-        findViewById<EditText>(R.id.nameEditText).setText(name)
-        findViewById<EditText>(R.id.emailEditText).setText(email)
-        findViewById<EditText>(R.id.contactNumberEditText).setText(contactNumber)
-
-        val countryIndex = (countrySpinner.adapter as ArrayAdapter<String>).getPosition(country)
-        val cityIndex = (citySpinner.adapter as ArrayAdapter<String>).getPosition(city)
-
-        countrySpinner.setSelection(countryIndex)
-        citySpinner.setSelection(cityIndex)
-    }
-
     private fun updateUserData(name: String, email: String, contactNumber: String, country: String, city: String) {
         val userUid = auth.currentUser!!.uid // Get the current user's UID
 
@@ -137,7 +96,7 @@ class MainActivity22 : AppCompatActivity() {
                 .addOnSuccessListener { taskSnapshot ->
                     // Get the download URL from the task snapshot
                     fileReference.downloadUrl.addOnSuccessListener { uri ->
-                        // Store the download URL in the database
+                        // Update the profile picture URL in the database
                         userRef.child("profilePicture").setValue(uri.toString())
                             .addOnSuccessListener {
                                 Toast.makeText(this@MainActivity22, "Profile picture uploaded", Toast.LENGTH_SHORT).show()
@@ -155,6 +114,49 @@ class MainActivity22 : AppCompatActivity() {
         // Redirect to the profile activity
         startActivity(Intent(this@MainActivity22, MainActivity21::class.java))
     }
+
+    private fun loadUserData() {
+        databaseRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    val name = snapshot.child("name").getValue(String::class.java)
+                    val email = snapshot.child("email").getValue(String::class.java)
+                    val contactNumber = snapshot.child("contactNumber").getValue(String::class.java)
+                    val country = snapshot.child("country").getValue(String::class.java)
+                    val city = snapshot.child("city").getValue(String::class.java)
+                    val profilePictureUrl = snapshot.child("profilePicture").getValue(String::class.java)
+
+                    populateFields(name, email, contactNumber, country, city)
+
+                    // Load profile picture using Glide
+                    profilePictureUrl?.let { url ->
+                        val profileImageView = findViewById<ShapeableImageView>(R.id.pfp)
+                        Glide.with(this@MainActivity22)
+                            .load(url)
+                            .into(profileImageView)
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Handle error
+            }
+        })
+    }
+
+
+    private fun populateFields(name: String?, email: String?, contactNumber: String?, country: String?, city: String?) {
+        findViewById<EditText>(R.id.nameEditText).setText(name)
+        findViewById<EditText>(R.id.emailEditText).setText(email)
+        findViewById<EditText>(R.id.contactNumberEditText).setText(contactNumber)
+
+        val countryIndex = (countrySpinner.adapter as ArrayAdapter<String>).getPosition(country)
+        val cityIndex = (citySpinner.adapter as ArrayAdapter<String>).getPosition(city)
+
+        countrySpinner.setSelection(countryIndex)
+        citySpinner.setSelection(cityIndex)
+    }
+
 
 
     private fun openFileChooser() {

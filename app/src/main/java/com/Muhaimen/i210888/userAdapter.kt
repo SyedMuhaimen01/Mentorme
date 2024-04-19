@@ -26,16 +26,23 @@ class userAdapter(private val context: Context, private val userList: ArrayList<
 
         // Load user image if available
         user.profilePicture?.let { imagePath ->
-            Picasso.get().load(imagePath).into(holder.userImage)
+            if (imagePath.isNotBlank()) {
+                Picasso.get().load(imagePath).into(holder.userImage)
+            } else {
+
+            }
+        } ?: run {
+
         }
 
-        holder.itemView.setOnClickListener{
+        holder.itemView.setOnClickListener {
             val intent = Intent(context, MainActivity16::class.java)
             intent.putExtra("name", user.name)
             intent.putExtra("imagePath", user.profilePicture)
             context.startActivity(intent)
         }
     }
+
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val textUsername: TextView = view.findViewById(R.id.nameTextView)

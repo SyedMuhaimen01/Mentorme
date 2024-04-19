@@ -17,7 +17,7 @@
         android:layout_marginStart="64dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/righttextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/inputfeild"
@@ -26,7 +26,7 @@
             android:gravity="left|center_horizontal"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="I need your guidance"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,8 @@
             android:text="10:31"
             android:textColor="@color/black"
             android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/righttextView"
+            app:layout_constraintTop_toBottomOf="@+id/righttextView"
             tools:ignore="TextViewEdits" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
