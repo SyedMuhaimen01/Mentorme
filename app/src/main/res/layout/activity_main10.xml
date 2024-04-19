@@ -39,6 +39,7 @@
         ></ImageButton>
 
     <TextView
+        android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="33dp"
@@ -47,7 +48,7 @@
         android:textStyle="bold"
         android:text="Search Results"
         android:layout_marginTop="50px"
-        >
+        tools:ignore="InvalidId">
     </TextView>
 
     <Spinner

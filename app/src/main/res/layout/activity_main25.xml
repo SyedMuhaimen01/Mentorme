@@ -51,7 +51,7 @@
     </TextView>
 
 <ImageButton
-    android:id="@+id/notifications"
+    android:id="@+id/notification_icon"
     android:layout_width="100px"
     android:layout_height="100px"
     android:src="@mipmap/notification2"
@@ -68,14 +68,18 @@
         android:layout_marginLeft="820px"
         android:layout_marginTop="80px"></TextView>
 
-    <TextView
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:text="You have added a mentor, Alex. Thank you! "
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginLeft="60px"
-        android:layout_marginTop="100px"></TextView>
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
 
     <ImageButton
         android:layout_width="80px"
@@ -90,14 +94,18 @@
         android:background="@color/color3"
         android:layout_marginTop="20px"></View>
 
-    <TextView
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@mipmap/close2"
+        android:layout_marginTop="-110px"
+        android:layout_marginLeft="950px"></ImageButton>
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:text="Your favorites list is expanding. Impressive"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginLeft="60px"
-        android:layout_marginTop="20px"></TextView>
+        android:layout_height="5px"
+        android:background="@color/color3"
+        android:layout_marginTop="20px"></View>
 
     <ImageButton
         android:layout_width="80px"
@@ -112,15 +120,6 @@
         android:background="@color/color3"
         android:layout_marginTop="20px"></View>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:text="You have a new message in community. 👀 "
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginLeft="60px"
-        android:layout_marginTop="20px"></TextView>
-
     <ImageButton
         android:layout_width="80px"
         android:layout_height="80px"
@@ -134,50 +133,14 @@
         android:background="@color/color3"
         android:layout_marginTop="20px"></View>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification"
         android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:text="Your favorite mentor is online. Say Hi to him."
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginLeft="60px"
-        android:layout_marginTop="20px"></TextView>
-
-    <ImageButton
-        android:layout_width="80px"
-        android:layout_height="80px"
-        android:src="@mipmap/close2"
-        android:layout_marginTop="-110px"
-        android:layout_marginLeft="950px"></ImageButton>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5px"
-        android:background="@color/color3"
-        android:layout_marginTop="20px"></View>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:text="Thank you for booking a session. Good luck."
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginLeft="60px"
-        android:layout_marginTop="20px"></TextView>
-
-    <ImageButton
-        android:layout_width="80px"
-        android:layout_height="80px"
-        android:src="@mipmap/close2"
-        android:layout_marginTop="-110px"
-        android:layout_marginLeft="950px"></ImageButton>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5px"
-        android:background="@color/color3"
-        android:layout_marginTop="20px"></View>
-
-
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        app:stackFromEnd="true"
+        tools:ignore="MissingConstraints" />
 
 </LinearLayout>

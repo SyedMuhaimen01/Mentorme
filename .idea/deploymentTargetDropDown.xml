@@ -8,13 +8,16 @@
       <entry key="NotifyNavigation()">
         <State />
       </entry>
-      <entry key="Testcase">
+      <entry key="TestCase2">
         <State />
       </entry>
       <entry key="app">
         <State />
       </entry>
       <entry key="testLoginToHomeActivity()">
+        <State />
+      </entry>
+      <entry key="viewVisibilityTest()">
         <State />
       </entry>
     </value>
